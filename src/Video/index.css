@@ -1,0 +1,81 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto";
+}
+
+.container {
+  max-width: 1440px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.upload-files {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.btn {
+  border: 2px solid gray;
+  color: gray;
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.upload-btn-wrapper input[type="file"] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.video {
+  display: flex;
+  margin-top: 50px;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.links {
+  max-height: 500px;
+  overflow-y: scroll;
+  width: 25vw;
+}
+
+.links a {
+  display: block;
+  text-decoration: none;
+  margin: 0.5rem 0;
+  background-color: blue;
+  padding: 0.5rem;
+  color: rgba(255, 255, 255, 0.8);
+  border-radius: 0.4em;
+}
+
+a:hover,
+a:focus {
+  opacity: 0.5;
+}
+
+.player {
+  min-width: 50vw;
+}
